@@ -1,0 +1,7 @@
+execute "run apt-get update command" do
+command "sudo apt-get update"
+end
+
+package 'nginx' do
+	action :install
+end
